@@ -1,15 +1,15 @@
 variable "name" {
-    type = string
+  type = string
 }
 
 variable "resource_group_name" {
-    type = string
+  type = string
 }
 
 variable "virtual_network_name" {
-    type = string
+  type = string
 }
 
 variable "address_prefixes" {
-    type = list(string)
+  type = list(string)
 }

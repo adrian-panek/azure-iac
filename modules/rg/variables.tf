@@ -1,8 +1,8 @@
 variable "name" {
-    type = string
+  type = string
 }
 
 variable "location" {
-    type    = string
-    default = "westeurope"
+  type    = string
+  default = "westeurope"
 }

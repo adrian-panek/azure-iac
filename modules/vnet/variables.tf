@@ -1,16 +1,16 @@
 variable "name" {
-    type = string
+  type = string
 }
 
 variable "resource_group_name" {
-    type = string
+  type = string
 }
 
 variable "location" {
-    type = string
+  type = string
 }
 
 variable "address_space" {
-    type = list(string)
+  type = list(string)
 }
 
