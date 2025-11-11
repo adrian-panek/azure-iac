@@ -38,13 +38,13 @@ variable "sa_vnet_name" {
 }
 
 variable "address_space" {
-    type = list(string)
+  type = list(string)
 }
 
 variable "subnet1_name" {
-    type = string
+  type = string
 }
 
 variable "address_prefixes" {
-    type = list(string)
+  type = list(string)
 }

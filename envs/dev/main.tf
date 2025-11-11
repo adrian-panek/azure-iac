@@ -15,18 +15,18 @@ module "adls" {
 }
 
 module "sa_vnet" {
-  source = "../../modules/vnet"
-  name = var.sa_vnet_name
+  source              = "../../modules/vnet"
+  name                = var.sa_vnet_name
   resource_group_name = module.rg.name
-  location = module.rg.location
-  address_space = var.address_space  
+  location            = module.rg.location
+  address_space       = var.address_space
 }
 
 module "subnet" {
-  source = "../../modules/subnet"
-  name = var.subnet1_name
-  address_prefixes = var.address_prefixes
-  resource_group_name = module.rg.name
+  source               = "../../modules/subnet"
+  name                 = var.subnet1_name
+  address_prefixes     = var.address_prefixes
+  resource_group_name  = module.rg.name
   virtual_network_name = module.sa_vnet.sa_vnet_name
 }
 
